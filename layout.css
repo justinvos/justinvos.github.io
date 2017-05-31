@@ -1,82 +1,60 @@
-body {
-  background: black;
-}
-
-#title {
-  color: white;
-  font-size: 54px;
-  font-weight: 700;
-  letter-spacing: 0.4em;
-  margin: 90px 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-#page {
-  margin: 20px auto;
-  width: 1100px;
-}
-
-.post img {
-  height: auto;
-  margin: 20px 0;
+.page {
   width: 100%;
 }
 
-.post__title {
-  background: white;
-  color: black;
-
-  display: inline-block;
-  font-size: 36px;
-  padding: 3px 12px;
-  text-transform: uppercase;
+#page--head {
+  padding: 25px 0 70px;
 }
 
-.post__content {
-  margin: 20px 0;
+.section {
+  margin: 0 auto;
+  width: 1000px;
 }
 
 
-.post:nth-child(7n+1) > .post__title {
-  background: #FFB300;
-  color: white;
+#section--nav {
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
 }
 
-.post:nth-child(7n+2) > .post__title {
-  background: #2196F3;
-  color: white;
+#title {
+  font-size: 32px;
+  flex-basis: 1000px;
 }
 
+#nav__list {
+  display: flex;
+  flex-direction: row;
+}
 
-#footer {
-  margin: 120px 0 40px 0;
-  text-align: center;
+.nav__list {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+#page--foot {
+  background: #2A333B;
+  /*bottom: 0px;
+  position: absolute;*/
+}
+
+#section--foot {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
 }
 
 .icon {
-  font-size: 32px;
-  margin: 0 15px;
+  font-size: 36px;
+  margin: 15px;
 }
 
-
-
-#github:hover {
-  color: #4078C0;
-}
-
-#codepen:hover {
-  color: #A271DF;
-}
-
-#stackexchange:hover {
-  color: #F48024;
-}
-
-#twitter:hover {
-  color: #55acee;
-}
-
-#linkedin:hover {
-  color: #0077B5;
+.project {
+  background: #FFFFFF;
+  border-radius: 3px;
+  box-shadow: 0 0 15px #982F0F;
+  color: #222222;
+  margin: 40px 0;
+  padding: 25px;
 }
