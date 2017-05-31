@@ -3,17 +3,19 @@
 }
 
 #page--head {
-  background: #FF7043;
-  height: 100%;
+  padding: 25px 0 70px;
+}
+
+.section {
+  margin: 0 auto;
+  width: 1000px;
 }
 
 
 #section--nav {
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
   padding-top: 15px;
-  width: 1200px;
 }
 
 #title {
@@ -27,24 +29,32 @@
 }
 
 .nav__list {
-  font-size: 28px;
-  margin: 0 15px;
+  font-size: 20px;
+  margin: 0 10px;
 }
 
 #page--foot {
   background: #2A333B;
-  bottom: 0px;
-  position: absolute;
+  /*bottom: 0px;
+  position: absolute;*/
 }
 
 #section--foot {
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
   width: 400px;
 }
 
 .icon {
   font-size: 36px;
   margin: 15px;
+}
+
+.project {
+  background: #FFFFFF;
+  border-radius: 3px;
+  box-shadow: 0 0 15px #982F0F;
+  color: #222222;
+  margin: 40px 0;
+  padding: 25px;
 }
