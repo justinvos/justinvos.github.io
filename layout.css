@@ -65,7 +65,7 @@
   margin: 15px;
 }
 
-#page--work {
+.page--work {
   background: white;
 }
 
@@ -82,4 +82,14 @@
   color: #33333;
   font-size: 20px;
   padding: 10px 0;
+}
+
+.page--services {
+  background: #2A333B;
+  color: white;
+}
+
+.page--about {
+  background: #2A333B;
+  color: white;
 }

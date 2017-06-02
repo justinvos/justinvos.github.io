@@ -13,6 +13,7 @@
 
 		<link href='base.css' rel='stylesheet' type='text/css'>
 		<link href='layout.css' rel='stylesheet' type='text/css'>
+		<link href='module.css' rel='stylesheet' type='text/css'>
 		<link href='overrides.css' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
@@ -20,16 +21,22 @@
 			<div id='section--nav' class='section'>
 				<h1 id='title'>Justin Vos</h1>
 				<ul id='nav__list'>
-					<li class='nav__list'>Services</li>
-					<li class='nav__list'>Work</li>
-					<li class='nav__list'>About</li>
-					<li class='nav__list'>Contact</li>
+					<li class='nav__list'><a href='#services'>Services</a></li>
+					<li class='nav__list'><a href='#work'>Work</a></li>
+					<li class='nav__list'><a href='#about'>About</a></li>
+					<li class='nav__list'><a href='#contact'>Contact</a></li>
 				</ul>
 			</div>
-			<p id='head__tag'>A Developer in Auckland</p>
+			<p id='head__tag'>Site in development</p>
 		</div>
 
-		<div id='page--work' class='page'>
+		<div id='services' class='page page--services'>
+			<div class='section'>
+				<h2 class='page__title'>Services</h2>
+			</div>
+		</div>
+
+		<div id='work' class='page page--work'>
 			<div class='section'>
 				<h2 class='page__title'>Work</h2>
 				<div class='project'>
@@ -48,6 +55,20 @@
 					<h3 class='project__title'><a href='https://github.com/justinvos/ernest'>Ernest</a></h3>
 					<p>An open source web app where students can collaboratively ask and answer questions from their peers. </p>
 				</div>
+			</div>
+		</div>
+
+		<div id='about' class='page page--about'>
+			<div class='section'>
+				<h2 class='page__title'>About</h2>
+			</div>
+		</div>
+
+		<div id='contact' class='page page--contact'>
+			<div class='section'>
+				<h2 class='page__title'>Contact</h2>
+				<p>Justin Vos</p>
+				<p><a class='special' href='mailto:justinvosnz@gmail.com'>justinvosnz@gmail.com</a></p>
 			</div>
 		</div>
 
