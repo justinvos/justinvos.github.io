@@ -2,21 +2,25 @@
   box-sizing: border-box;
   color: inherit;
   font-family: "Roboto";
-  font-size: 20px;
+
   margin: 0;
   padding: 0;
 }
 
 html, body {
-  background: #D84315;
   height: 100%;
+  font-size: 20px;
   width: 100%;
-}
-
-body {
-  color: white;
 }
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
