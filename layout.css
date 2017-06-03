@@ -65,14 +65,32 @@
   margin: 15px;
 }
 
+.services {
+  display: flex;
+}
+
+.service {
+  padding: 0 20px;
+  width: 33%;
+}
+
 .page--work {
   background: white;
 }
 
 .project {
   color: #222222;
+  display: flex;
   margin: 40px 0;
   padding: 25px 0;
+}
+
+.project__right {
+  margin-left: 40px;
+}
+
+.project__image {
+  height: 140px;
 }
 
 .project__title {
