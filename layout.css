@@ -51,11 +51,13 @@
   }
   .head__tag {
     font-size: 64px;
+    margin: 160px 0 40px;
   }
 }
 
 @media (max-width: 460px) {
   .head__tag {
     font-size: 50px;
+    margin: 80px 0 30px;
   }
 }
