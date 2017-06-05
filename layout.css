@@ -1,4 +1,10 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
 .head {
+  flex-grow: 1;
   margin: 0 auto;
   padding: 40px 0;
   width: 1000px;
@@ -6,12 +12,13 @@
 
 .head__title {
   color: #FF0024;
+  padding: 0 15px;
 }
 
 .head__tag {
   color: white;
   font-size: 104px;
-  margin: 240px 0;
+  margin: 240px 0 60px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -19,11 +26,10 @@
 
 .foot {
   border-top: #111111 solid 1px;
-  bottom: 0;
   color: white;
   font-size: 28px;
+  height: 64px;
   padding: 15px;
-  position: absolute;
   width: 100%;
 }
 
@@ -37,4 +43,19 @@
 .foot__item {
   display: inline-block;
   margin: 0 15px;
+}
+
+@media (max-width: 1000px) {
+  .head, .foot__list {
+    width: 100%;
+  }
+  .head__tag {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 460px) {
+  .head__tag {
+    font-size: 50px;
+  }
 }
