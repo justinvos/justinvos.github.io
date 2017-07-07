@@ -14,7 +14,7 @@ ul {
   list-style: none; }
 
 a:hover {
-  color: #FF0024; }
+  color: #F7630C; }
 
 .root {
   display: flex;
@@ -34,7 +34,7 @@ a:hover {
   padding: 40px 0; }
 
 .head__title {
-  color: #FF0024;
+  color: #F7630C;
   padding: 0 15px; }
 
 .section__tag {
