@@ -7,6 +7,7 @@
 
 html, body {
   background: black;
+  color: white;
   height: 100%;
   width: 100%; }
 
@@ -16,20 +17,65 @@ ul {
 a:hover {
   color: #F7630C; }
 
-.root {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
+.project {
+  background: white;
+  font-family: "Open Sans";
+  margin-bottom: 20px;
+  padding: 40px; }
 
-.head, .section__tag, .foot__list {
-  width: 1000px; }
-  @media (max-width: 1000px) {
-    .head, .section__tag, .foot__list {
+.project:last-child {
+  margin-bottom: 0; }
+
+.project--podcastfeed {
+  background: url("../images/pexels-photo.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.project--house {
+  background: url("http://www.lacasa.co.nz/houseDarkBlue.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.project__front {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  width: 450px;
+  height: 100%;
+  padding: 25px; }
+
+.project--podcastfeed .project__front {
+  background: #0078D7; }
+
+.project--house .project__front {
+  background: #59A9C2; }
+
+.button {
+  background: white;
+  border: rgba(255, 255, 255, 0) solid 2px;
+  border-radius: 2px;
+  color: black;
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 20px;
+  padding: 15px 30px;
+  text-decoration: none; }
+
+.button:hover {
+  background: rgba(255, 255, 255, 0);
+  border: white solid 2px;
+  color: white; }
+
+.section {
+  width: 100%; }
+  @media (max-width: 100%) {
+    .section {
       width: 100%; } }
 
-.head {
+.section--head {
   display: flex;
   flex-direction: column;
+  height: 10%;
   margin: 0 auto;
   padding: 40px 0; }
 
@@ -37,20 +83,40 @@ a:hover {
   color: #F7630C;
   padding: 0 15px; }
 
-.section__tag {
+.section--landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90%;
+  margin: 0 auto; }
+
+.landing__tag {
   color: white;
   font-size: 104px;
-  margin: 0 auto;
   text-align: center;
   text-transform: uppercase; }
-  @media (max-width: 1000px) {
-    .section__tag {
+  @media (max-width: 100%) {
+    .landing__tag {
       font-size: 64px; } }
   @media (max-width: 460px) {
-    .section__tag {
+    .landing__tag {
       font-size: 50px; } }
 
-.foot {
+.about__title {
+  font-size: 64px;
+  margin: 20px; }
+
+.about__description {
+  text-align: center; }
+
+.section--projects {
+  width: 100%; }
+
+.projects__title {
+  font-size: 64px;
+  margin: 20px; }
+
+.section--foot {
   border-top: #111111 solid 1px;
   color: white;
   font-size: 28px;

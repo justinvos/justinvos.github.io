@@ -1,17 +1,13 @@
-.root
-  display: flex
-  flex-direction: column
-  justify-content: space-between
-
-.head, .section__tag, .foot__list
+.section
   width: $sizeSiteWidth
 
   @media (max-width: $sizeSiteWidth)
     width: 100%
 
-.head
+.section--head
   display: flex
   flex-direction: column
+  height: 10%
   margin: 0 auto
   padding: 40px 0
 
@@ -19,10 +15,16 @@
   color: $fontColor
   padding: 0 15px
 
-.section__tag
+.section--landing
+  display: flex
+  flex-direction: column
+  justify-content: center
+  height: 90%
+  margin: 0 auto
+
+.landing__tag
   color: white
   font-size: 104px
-  margin: 0 auto
   text-align: center
   text-transform: uppercase
 
@@ -32,7 +34,23 @@
   @media (max-width: 460px)
     font-size: 50px
 
-.foot
+.section--about
+
+.about__title
+  font-size: 64px
+  margin: 20px
+
+.about__description
+  text-align: center
+
+.section--projects
+  width: 100%
+
+.projects__title
+  font-size: 64px
+  margin: 20px
+
+.section--foot
   border-top: #111111 solid 1px
   color: white
   font-size: 28px
