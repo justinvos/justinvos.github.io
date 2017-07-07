@@ -8,5 +8,5 @@ gulp.task("sass", [], function() {
 })
 
 gulp.task("sass:watch", function() {
-  gulp.watch(".", ["sass"])
+  gulp.watch("./main.sass", ["sass"])
 })
