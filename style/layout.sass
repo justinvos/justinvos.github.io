@@ -1,4 +1,5 @@
 .section
+  margin: 0 auto
   width: $sizeSiteWidth
 
   @media (max-width: $sizeSiteWidth)
@@ -12,19 +13,24 @@
   padding: 40px 0
 
 .head__title
-  color: $fontColor
-  padding: 0 15px
+  color: white
+  padding: 30px
 
 .section--landing
+  background: url("http://nzdcr.co.nz/wp-content/uploads/2016/05/stars.jpg")
+  background-position: center
+  background-size: cover
   display: flex
   flex-direction: column
-  justify-content: center
-  height: 90%
+  height: 100%
   margin: 0 auto
+  width: 100%
 
 .landing__tag
   color: white
+  display: inline-block
   font-size: 104px
+  height: 200px
   text-align: center
   text-transform: uppercase
 
@@ -34,13 +40,25 @@
   @media (max-width: 460px)
     font-size: 50px
 
+.landing__content
+  display: flex
+  flex-direction: column
+  flex-grow: 1
+  justify-content: center
+
 .section--about
+  background: #222222
+  padding: 120px 0
+  width: 100%
 
 .about__title
   font-size: 64px
   margin: 20px
 
 .about__description
+  color: white
+  font-size: 48px
+  letter-spacing: 0.02em
   text-align: center
 
 .section--projects
@@ -48,9 +66,11 @@
 
 .projects__title
   font-size: 64px
-  margin: 20px
+  margin: 80px auto
+  width: $sizeSiteWidth
 
 .section--foot
+  background: black
   border-top: #111111 solid 1px
   color: white
   font-size: 28px
