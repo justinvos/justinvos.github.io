@@ -144,9 +144,39 @@ a:visited
   flex-direction: row
   justify-content: center
   margin: 32px 0
+  @media (max-width: 1050px)
+    flex-direction: column
+    margin: 32px auto
+    width: 500px
 
 .work
-  width: 300px
+  cursor: pointer
+  display: inline-block
+  margin-left: 8px
+  height: 273px
+  width: 500px
+  @media (max-width: 1050px)
+    margin: 8px 0
+
+.work:first-child
+  margin-left: 0
+
+.work--priceme
+  background: url('/home/vos/projects/justinvos.github.io/images/priceme.png')
+  background-size: cover
+
+.work--lacasa
+  background: url('/home/vos/projects/justinvos.github.io/images/lacasa.png')
+  background-size: cover
+
+.work__shadow
+  background: none
+  height: 100%
+  width: 100%
+
+.work__shadow:hover
+  background: rgba(0,0,0,0.3)
+  transition: background 0.2s
 
 .page--footer
   background: #232E33
