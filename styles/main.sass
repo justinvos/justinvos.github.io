@@ -71,6 +71,9 @@ a:visited
 .about__section
   margin: 0 auto
   width: 800px
+  @media (max-width: 830px)
+    padding: 0 32px
+    width: 100%
 
 .about__description
   font-size: 18px
@@ -84,10 +87,17 @@ a:visited
   flex-direction: row
   justify-content: center
   margin: 32px 0
+  @media (max-width: 600px)
+    flex-direction: column
+    
 
 .services__column
   margin: 0 80px
   width: 180px
+  @media (max-width: 800px)
+    margin: 32px
+  @media (max-width: 600px)
+    margin: 16px auto
 
 .services__listing
   list-style: none
@@ -115,6 +125,10 @@ a:visited
 .contact__section
   margin: 0 auto
   width: 800px
+  @media (max-width: 800px)
+    margin: 0
+    padding: 0 15px
+    width: 100%
 
 .contact__lead
   color: white
@@ -146,6 +160,9 @@ a:visited
   margin: 0 auto
   padding: 50px
   width: 800px
+  @media (max-width: 800px)
+    margin: 0
+    width: 100%
 
 .footer__icon
   color: white
