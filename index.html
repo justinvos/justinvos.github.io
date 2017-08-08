@@ -1,69 +1,78 @@
 <!doctype html>
 <html>
-	<head>
-		<meta content='text/html;charset=utf-8' http-equiv='Content-Type'>
-    <meta content='utf-8' http-equiv='encoding'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <meta name='description' content='A Developer in Auckland, this is his personal portfolio website.' />
-
-		<title>Justin Vos</title>
-
-		<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
+    <head>
+        <link href='styles/main.css' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,500|Nunito:600' rel='stylesheet'>
 		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
-
-		<link href='style/main.css' rel='stylesheet' type='text/css'>
-
-		<script>
-	  	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	  	ga('create', 'UA-79568620-4', 'auto');
-	  	ga('send', 'pageview');
-	</script>
-	</head>
-	<body class='root'>
-		<div class='section section--landing'>
-			<h1 class='head__title'>Justin Vos</h1>
-			<div class='landing__content'>
-				<h2 class='landing__tag'>A Kiwi developer</h2>
-			</div>
-		</div>
-
-		<div class='section section--about'>
-			<div class='section'>
-				<p class='about__description'>A developer based in Auckland, New Zealand specialising in Web, Data and Mobile.</p>
-			</div>
-		</div>
-
-		<div class='section section--projects'>
-			<div class='project project--podcastfeed'>
-				<div class='section'>
-				  <div class='project__front'>
-				    <p>Podcast-feed is a really simple and straightforward podcast feed reader. Built on the modern platform Node.js and npm, podcast-feed has already been used over two hundred projects.</p>
-						<a class='button' href='https://www.npmjs.com/package/podcast-feed'>View</a>
-					</div>
-				</div>
-			</div>
-
-			<div class='project project--house'>
-				<div class='section'>
-				  <div class='project__front front--house'>
-				    <p>A fresh marketing and contact landing page for a local property management business.</p>
-						<a class='button' href='http://lacasa.co.nz'>View</a>
-				  </div>
-				</div>
-			</div>
-		</div>
-
-		<footer class='section section--foot'>
-			<ul class='foot__list'>
-				<a href='https://github.com/justinvos'><li class='foot__item'><i class="fa fa-github" aria-hidden="true"></i></li></a>
-				<a href='http://codepen.io/justinvos/'><li class='foot__item'><i class="fa fa-codepen" aria-hidden="true"></i></li></a>
-				<a href='https://twitter.com/justinvosnz'><li class='foot__item'><i class="fa fa-twitter" aria-hidden="true"></i></li></a>
-				<a href='https://www.linkedin.com/in/justin-vos/'><li class='foot__item'><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
-				<a href='mailto:justinvosnz@gmail.com'><li class='foot__item'><i class="fa fa-envelope" aria-hidden="true"></i></li></a>
-			</ul>
-		</footer>
-	</body>
+    </head>
+    <body>
+        <div class='page page--top'>
+            <div class='top__section'>
+                <img class='top__icon' src='images/iconWhite.svg'>
+                <h1 class='top__title'>Justin Vos</h1>
+                <p class='top__tagline'>A Kiwi Web developer</p>
+            </div>
+        </div>
+        <div class='page page--about'>
+            <div class='about__section'>
+                <p class='about__description'>A freelance developer based in Auckland, New Zealand. After finishing my Computer Science degree, I decided to bring my skills and experience to building practical solutions for real-world problems. I now specialise in Web development, design and data.</p>
+            </div>
+        </div>
+        <div class='page page--services'>
+            <h3 class='page__title'>Skills</h3>
+            <div class='services__section'>
+                <div class='services__column'>
+                    <h4>Development</h4>
+                    <ul class='services__listing'>
+                        <li class='service'>Node.js</li>
+                        <li class='service'>React + Redux</li>
+                        <li class='service'>PHP + WordPress</li>
+                        <li class='service'>Angular</li>
+                        <li class='service'>C#</li>
+                        <li class='service'>Java</li>
+                    </ul>
+                </div>
+                <div class='services__column'>
+                    <h4>Design</h4>
+                    <ul class='services__listing'>
+                        <li class='service'>Wireframing</li>
+                        <li class='service'>Protyping</li>
+                        <li class='service'>HTML + CSS</li>
+                        <li class='service'>SASS</li>
+                        <li class='service'>Responsive design</li>
+                    </ul>
+                </div>
+                <div class='services__column'>
+                    <h4>Data</h4>
+                    <ul class='services__listing'>
+                        <li class='service'>Python + Pandas</li>
+                        <li class='service'>R</li>
+                        <li class='service'>Business Intelligence</li>
+                        <li class='service'>MongoDB</li>
+                        <li class='service'>MySQL</li>
+                        <li class='service'>SQL Server</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class='page--contact'>
+            <div class='contact__section'>
+                <p class='contact__lead'>Looking to start a project on the Web?<br />Flick me an email on <a href='mailto:justin@vos.kiwi'>justin@vos.kiwi</a>.</p>
+            </div>
+        </div>
+        <div class='page--work'>
+            <h3 class='page__title'>Recent work</h3>
+            <div class='work__section'>
+                <img class='work' src='http://www.material-ui.com/images/get-started.svg'>
+                <img class='work' src='http://www.material-ui.com/images/css-framework.svg'>
+            </div>
+        </div>
+        <div class='page--footer'>
+            <div class='footer__section'>
+                <i class="fa fa-github footer__icon" aria-hidden="true"></i>
+                <i class="fa fa-envelope footer__icon" aria-hidden="true"></i>
+                <i class="fa fa-codepen footer__icon" aria-hidden="true"></i>
+            </div>
+        </div>
+    </body>
 </html>
