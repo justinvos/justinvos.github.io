@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #222222;
+  margin: 32px;
+}
+
+h1 {
+  background-color: white;
+  border: white solid 2px;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  padding: 16px;
+  transition: color 0.15s, background-color 0.15s;
+}
+
+h1:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  cursor: pointer;
+  transition: color 0.15s, background-color 0.15s;
+}
+
+p {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  margin-top: 32px;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+.link:hover {
+  color: blue;
+}
