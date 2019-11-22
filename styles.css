@@ -6,7 +6,13 @@
 
 body {
   background: #222222;
-  margin: 32px;
+  margin: 16px;
+}
+
+@media (min-width: 960px) {
+  body {
+    margin: 32px;
+  }
 }
 
 h1 {
