@@ -16,7 +16,6 @@ h1 {
 p {
   visibility: hidden;
   margin-bottom: 8px;
-  position: relative;
   width: max-content;
 
   animation: show 1s 1;
@@ -31,7 +30,6 @@ p::after {
   background-color: black;
   position: absolute;
   left: -4px;
-  top: 0;
 
   animation: reveal 1s 1;
   animation-timing-function: ease;
@@ -50,6 +48,11 @@ a:hover {
 main {
   margin: 208px 32px 32px;
   transition: margin 0.5s;
+}
+
+.content {
+  position: relative;
+  width: max-content;
 }
 
 .delay, .delay::after {
