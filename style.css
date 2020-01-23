@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  margin-bottom: 16px;
+}
+
+p {
+  visibility: hidden;
+  margin-bottom: 8px;
+  position: relative;
+  width: max-content;
+
+  animation: show 1s 1;
+  animation-fill-mode: forwards;
+}
+
+p::after {
+  visibility: visible;
+  content: '';
+  height: 24px;
+  width: 0;
+  background-color: black;
+  position: absolute;
+  left: -4px;
+  top: 0;
+
+  animation: reveal 1s 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin: 208px 32px 32px;
+}
+
+.delay, .delay::after {
+  animation-delay: 0.8s;
+}
+
+@keyframes show {
+  50% {
+    visibility: hidden;
+  }
+  51% {
+    visibility: visible;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes reveal {
+  50% {
+    left: -4px;
+    right: unset;
+    width: calc(100% + 8px);
+  }
+
+  51% {
+    left: unset;
+    right: -4px;
+  }
+
+  100% {
+    left: unset;
+    right: -4px;
+    width: 0;
+  }
+}
