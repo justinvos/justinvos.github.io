@@ -16,6 +16,7 @@ h1 {
 p {
   visibility: hidden;
   margin-bottom: 8px;
+  position: relative;
   width: max-content;
 
   animation: show 1s 1;
@@ -47,16 +48,10 @@ a:hover {
 
 main {
   margin: 208px 32px 32px;
-  transition: margin 0.5s;
-}
-
-.content {
-  position: relative;
-  width: max-content;
 }
 
 .delay, .delay::after {
-  animation-delay: 0.8s;
+  animation-delay: 0.7s;
 }
 
 @keyframes show {
@@ -93,6 +88,5 @@ main {
 @media screen and (min-width: 800px) {
   main {
     margin: 208px 220px 32px;
-    transition: margin 0.5s;
   }
 }
