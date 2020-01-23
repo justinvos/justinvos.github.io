@@ -49,6 +49,7 @@ a:hover {
 
 main {
   margin: 208px 32px 32px;
+  transition: margin 0.5s;
 }
 
 .delay, .delay::after {
@@ -83,5 +84,12 @@ main {
     left: unset;
     right: -4px;
     width: 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    margin: 208px 220px 32px;
+    transition: margin 0.5s;
   }
 }
