@@ -90,3 +90,13 @@ main {
     margin: 208px 220px 32px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background: black;
+    color: white;
+  }
+  p::after {
+    background: white;
+  }
+}
