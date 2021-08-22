@@ -9,18 +9,19 @@
   font-size: 16px;
 }
 
-h1 {
-  margin-bottom: 16px;
-}
-
 p {
   visibility: hidden;
-  margin-bottom: 8px;
+  margin-top: 8px;
   position: relative;
   width: max-content;
+  white-space: nowrap;
 
   animation: show 1s 1;
   animation-fill-mode: forwards;
+}
+
+p:first-of-type {
+  margin-top: 16px;
 }
 
 p::after {
@@ -39,11 +40,14 @@ p::after {
 
 a {
   color: inherit;
+  padding: 2px;
+  margin: -2px;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+a:hover, a:active, a:focus {
+  background: white;
+  color: #000;
 }
 
 main {
