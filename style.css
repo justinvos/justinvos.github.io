@@ -46,8 +46,8 @@ a {
 }
 
 a:hover, a:active, a:focus {
-  background: white;
-  color: #000;
+  background: black;
+  color: white;
 }
 
 main {
@@ -102,5 +102,9 @@ main {
   }
   p::after {
     background: white;
+  }
+  a:hover, a:active, a:focus {
+    background: white;
+    color: black;
   }
 }
