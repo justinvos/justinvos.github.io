@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  gap: 64px;
+  justify-items: center;
+  height: 80vh;
+}
+
+.card {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  height: 400px;
+  padding: 16px;
+  width: 200px;
+}
+
+#result {
+  text-align: center;
+}

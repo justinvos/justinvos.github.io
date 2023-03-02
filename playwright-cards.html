@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <div class="container">
-      <div class="card" data-testid="$65-endless-plan">
-        <h3>$65 Endless Plan</h3>
-        <button onclick="handleClick('$65')">Select plan</button>
-      </div>
-      <div class="card" data-testid="$85-endless-plan">
-        <h3>$85 Endless Plan</h3>
-        <button data-testid="plan" onclick="handleClick('$85')">Select plan</button>
-      </div>
-      <div class="card">
-        <h3>$100 Endless Plan</h3>
-        <button data-testid="endlessplan" onclick="handleClick('$100')">Select plan</button>
-      </div>
-    </div>
-    <p id="result"></p>
-    <script>
-      const resultElement = document.getElementById('result');
 
-      function handleClick(amount) {
-        resultElement.innerHTML = `${amount} Endless Plan is added to cart`;
-      }
-    </script>
-  </body>
+<head>
+  <link rel="stylesheet" href="cards.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="card" data-testid="$65-endless-plan">
+      <h3>$65 Endless Plan</h3>
+      <button onclick="handleClick('$65')">Select plan</button>
+    </div>
+    <div class="card" data-testid="$85-endless-plan">
+      <h3>$85 Endless Plan</h3>
+      <button data-testid="plan" onclick="handleClick('$85')">Select plan</button>
+    </div>
+    <div class="card">
+      <h3>$100 Endless Plan</h3>
+      <button data-testid="endlessplan" onclick="handleClick('$100')">Select plan</button>
+    </div>
+  </div>
+  <p id="result"></p>
+  <script>
+    const resultElement = document.getElementById('result');
+
+    function handleClick(amount) {
+      resultElement.innerHTML = `${amount} Endless Plan is added to cart`;
+    }
+  </script>
+</body>
+
 </html>
