@@ -17,7 +17,7 @@
   <p id="result"></p>
   <script>
     const colorDropdown = document.getElementById('color');
-    const selectedColor = colorDropdown.value;
+    const selectedColor = colorDropdown.options[colorDropdown.selectedIndex].text;
 
     const resultElement = document.getElementById('result');
 
