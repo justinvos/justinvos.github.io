@@ -17,11 +17,12 @@
   <p id="result"></p>
   <script>
     const colorDropdown = document.getElementById('color');
-    const selectedColor = colorDropdown.options[colorDropdown.selectedIndex].text;
 
     const resultElement = document.getElementById('result');
 
     function handleClick() {
+      const selectedColor = colorDropdown.options[colorDropdown.selectedIndex].text;
+
       resultElement.innerHTML = `${selectedColor} is added to cart`;
     }
   </script>
