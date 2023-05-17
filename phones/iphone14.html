@@ -9,7 +9,7 @@
   <select id="color" name="color">
     <option value="black">Black</option>
     <option value="blue">Blue</option>
-    <option value="saab">Red</option>
+    <option value="red">Red</option>
     <option value="white">White</option>
   </select>
   <button onclick="handleClick()" type="button">Add to cart</button>
@@ -20,7 +20,7 @@
 
     const resultElement = document.getElementById('result');
 
-    function handleClick(amount) {
+    function handleClick() {
       resultElement.innerHTML = `${selectedColor} is added to cart`;
     }
   </script>
