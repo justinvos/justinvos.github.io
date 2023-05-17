@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <h3>iPhone 14</h3>
+  <select id="color" name="color">
+    <option value="black">Black</option>
+    <option value="blue">Blue</option>
+    <option value="saab">Red</option>
+    <option value="white">White</option>
+  </select>
+  <button onclick="handleClick()" type="button">Add to cart</button>
+  <p id="result"></p>
+  <script>
+    const colorDropdown = document.getElementById('color');
+    const selectedColor = colorDropdown.value;
+
+    const resultElement = document.getElementById('result');
+
+    function handleClick(amount) {
+      resultElement.innerHTML = `${selectedColor} is added to cart`;
+    }
+  </script>
+</body>
+
+</html>
