@@ -5,7 +5,7 @@
 }
 
 :root {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
 
@@ -26,12 +26,13 @@ p:first-of-type {
 
 p::after {
   visibility: visible;
-  content: '';
+  content: "";
   height: 24px;
   width: 0;
   background-color: black;
   position: absolute;
   left: -4px;
+  bottom: 0;
 
   animation: reveal 1s 1;
   animation-timing-function: ease;
@@ -45,7 +46,9 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:active, a:focus {
+a:hover,
+a:active,
+a:focus {
   background: black;
   color: white;
 }
@@ -54,7 +57,8 @@ main {
   margin: 208px 32px 32px;
 }
 
-.delay, .delay::after {
+.delay,
+.delay::after {
   animation-delay: 0.7s;
 }
 
@@ -103,7 +107,9 @@ main {
   p::after {
     background: white;
   }
-  a:hover, a:active, a:focus {
+  a:hover,
+  a:active,
+  a:focus {
     background: white;
     color: black;
   }
