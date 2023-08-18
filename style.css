@@ -9,6 +9,31 @@
   font-size: 16px;
 }
 
+h1 {
+  visibility: hidden;
+  position: relative;
+  width: max-content;
+  white-space: nowrap;
+
+  animation: show 1s 1;
+  animation-fill-mode: forwards;
+}
+
+h1::after {
+  visibility: visible;
+  content: "";
+  height: 40px;
+  width: 0;
+  background-color: black;
+  position: absolute;
+  left: -4px;
+  bottom: 0;
+
+  animation: reveal 1s 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
 p {
   visibility: hidden;
   margin-top: 8px;
@@ -60,6 +85,11 @@ main {
 .delay,
 .delay::after {
   animation-delay: 0.7s;
+}
+
+.delay-2,
+.delay-2::after {
+  animation-delay: 1.4s;
 }
 
 @keyframes show {
