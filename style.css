@@ -15,8 +15,6 @@ p {
   position: relative;
   width: max-content;
   white-space: nowrap;
-
-  animation: show 1s 1;
   animation-fill-mode: forwards;
 }
 
@@ -30,13 +28,17 @@ h1::after {
   left: -4px;
   bottom: 0;
 
-  animation: reveal 1s 1;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
 
 p {
   margin-top: 8px;
+  animation: show 1s 1;
+}
+
+h1 {
+  animation: show 0.8s 1;
 }
 
 p:first-of-type {
@@ -44,10 +46,12 @@ p:first-of-type {
 }
 
 h1::after {
+  animation: reveal 0.8s 1;
   height: 40px;
 }
 
 p::after {
+  animation: reveal 1s 1;
   height: 24px;
 }
 
@@ -71,7 +75,7 @@ main {
 
 h1,
 h1::after {
-  animation-delay: 0.4s;
+  animation-delay: 0.3s;
 }
 
 .delay,
