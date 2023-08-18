@@ -134,7 +134,8 @@ main {
     background: black;
     color: white;
   }
-  p::after {
+  p::after,
+  h1::after {
     background: white;
   }
   a:hover,
