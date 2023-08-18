@@ -69,6 +69,11 @@ main {
   margin: 208px 32px 32px;
 }
 
+h1,
+h1::after {
+  animation-delay: 0.1s;
+}
+
 .delay,
 .delay::after {
   animation-delay: 0.7s;
