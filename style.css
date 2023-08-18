@@ -42,6 +42,7 @@ p {
 }
 
 h1 {
+  animation-delay: 0;
   animation-duration: 0.8s;
 }
 
@@ -50,6 +51,7 @@ p:first-of-type {
 }
 
 h1::after {
+  animation-delay: 0;
   animation-duration: 0.8s;
   height: 40px;
 }
