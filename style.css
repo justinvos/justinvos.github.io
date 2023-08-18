@@ -100,7 +100,10 @@ main {
 }
 
 @keyframes reveal {
-  0%,
+  0% {
+    left: -4px;
+    width: 0;
+  }
   50% {
     left: -4px;
     right: unset;
