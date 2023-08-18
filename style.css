@@ -9,7 +9,8 @@
   font-size: 16px;
 }
 
-h1 {
+h1,
+p {
   visibility: hidden;
   position: relative;
   width: max-content;
@@ -19,10 +20,10 @@ h1 {
   animation-fill-mode: forwards;
 }
 
+p::after,
 h1::after {
   visibility: visible;
   content: "";
-  height: 40px;
   width: 0;
   background-color: black;
   position: absolute;
@@ -35,33 +36,19 @@ h1::after {
 }
 
 p {
-  visibility: hidden;
   margin-top: 8px;
-  position: relative;
-  width: max-content;
-  white-space: nowrap;
-
-  animation: show 1s 1;
-  animation-fill-mode: forwards;
 }
 
 p:first-of-type {
   margin-top: 16px;
 }
 
-p::after {
-  visibility: visible;
-  content: "";
-  height: 24px;
-  width: 0;
-  background-color: black;
-  position: absolute;
-  left: -4px;
-  bottom: 0;
+h1::after {
+  height: 40px;
+}
 
-  animation: reveal 1s 1;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
+p::after {
+  height: 24px;
 }
 
 a {
