@@ -32,7 +32,10 @@
   <body>
     <div id="root">
       <h1>Test page</h1>
-      <img alt="This is fine meme" src="this_is_fine.jpg" />
+      <img id="meme-img" alt="This is fine meme" src="this_is_fine.jpg" />
     </div>
+    <script>
+      document.getElementById('meme-img').addEventListener('click', () => alert('Hi RUM Summit!'));
+    </script>
   </body
 </html>
