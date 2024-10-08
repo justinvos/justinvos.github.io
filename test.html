@@ -2,6 +2,9 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="test.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <script>
       (function(h,o,u,n,d) {
         h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
@@ -31,11 +34,21 @@
   </head>
   <body>
     <div id="root">
-      <h1>Test page</h1>
+      <h1 id="heading">Test page</h1>
       <img id="meme-img" alt="This is fine meme" src="this_is_fine.jpg" />
+      <button id="generate-random-number-button">Generate random number</button>
     </div>
     <script>
       document.getElementById('meme-img').addEventListener('click', () => alert('Hi RUM Summit!'));
+
+      function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+      }
+
+      document.getElementById('change-color-button').addEventListener('click', () => {
+        const headingElement = document.getElementById('heading');
+        headingElement.innerHTML = `Test page: ${getRandomInt(100)}`;
+      });
     </script>
   </body
 </html>
