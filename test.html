@@ -29,9 +29,6 @@
           trackLongTasks: true,
           defaultPrivacyLevel: 'mask-user-input',
         });
-
-        window.DD_RUM.addFeatureFlagEvaluation("유닛", true);
-        window.DD_RUM.addFeatureFlagEvaluation("test space", true);
       })
     </script>
   </head>
@@ -51,6 +48,9 @@
       document.getElementById('generate-random-number-button').addEventListener('click', () => {
         const headingElement = document.getElementById('heading');
         headingElement.innerHTML = `Test page: ${getRandomInt(100)}`;
+
+        const img = document.getElementById('meme-img');
+        img.setAttribute('style', 'position: relative; top: 200px;');
       });
     </script>
   </body
