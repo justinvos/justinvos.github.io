@@ -11,3 +11,7 @@ img {
 unused {
   color: blue;
 }
+
+.dd-session-replay-player h1 {
+  background-color: aqua;
+}
