@@ -34,7 +34,7 @@
   </head>
   <body>
     <div id="root">
-      <h1 id="heading">Test page</h1>
+      <h1 id="heading">Test page 2</h1>
       <img id="meme-img" alt="This is fine meme" class="this_is_fine_img" src="this_is_fine.jpg" />
       <button id="generate-random-number-button">Generate random number</button>
       <button id="generate-error-button">Generate error</button>
@@ -49,7 +49,7 @@
       document.getElementById('generate-random-number-button').addEventListener('click', () => {
         const headingElement = document.getElementById('heading');
         const newNumber = getRandomInt(100);
-        console.log('test page:', { newNumber });
+        console.log('test page 2:', { newNumber });
         headingElement.innerHTML = `Test page: ${newNumber}`;
 
         const img = document.getElementById('meme-img');
