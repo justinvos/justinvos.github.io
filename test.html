@@ -31,6 +31,21 @@
         });
       })
     </script>
+    <script>
+      (function(h,o,u,n,d) {
+        h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
+        d=o.createElement(u);d.async=1;d.src=n
+        n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
+      })(window,document,'script','https://www.datadoghq-browser-agent.com/us1/v5/datadog-logs.js','DD_LOGS')
+      window.DD_LOGS.onReady(function() {
+          window.DD_LOGS.init({
+            clientToken: 'pub95d276d97472b3cf0316df206ad3cae1',
+            site: 'datadoghq.com',
+            forwardErrorsToLogs: true,
+            sessionSampleRate: 100,
+          })
+        })
+      </script>
   </head>
   <body>
     <div id="root">
@@ -38,6 +53,7 @@
       <img id="meme-img" alt="This is fine meme" class="this_is_fine_img" src="this_is_fine.jpg" />
       <button id="generate-random-number-button">Generate random number</button>
       <button id="generate-error-button">Generate error</button>
+      <a href="/test2.html">Go to test2.html</a>
     </div>
     <script>
       document.getElementById('meme-img').addEventListener('click', () => alert('Hi RUM Summit!'));
@@ -50,6 +66,9 @@
         const headingElement = document.getElementById('heading');
         const newNumber = getRandomInt(100);
         console.log('test page:', { newNumber });
+        window.DD_LOGS.onReady(function () {
+          window.DD_LOGS.logger.info(`test page 2: ${newNumber}`);
+        })
         headingElement.innerHTML = `Test page: ${newNumber}`;
 
         const img = document.getElementById('meme-img');
