@@ -10,43 +10,24 @@
         h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
         d=o.createElement(u);d.async=1;d.src=n
         n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
-      })(window,document,'script','https://www.datadoghq-browser-agent.com/us1/v5/datadog-rum.js','DD_RUM')
+      })(window,document,'script','https://www.datadoghq-browser-agent.com/us1/v6/datadog-rum.js','DD_RUM')
       window.DD_RUM.onReady(function() {
         window.DD_RUM.init({
-          clientToken: 'pub95d276d97472b3cf0316df206ad3cae1',
-          applicationId: '0acc0ec1-fc76-4f65-80b9-51391a687ed9',
+          clientToken: 'pubf18f3f914cc6f1fb1c95c8918d0378fe',
+          applicationId: '7253836e-c8dc-4d09-a974-d9a0566c7411',
           // `site` refers to the Datadog site parameter of your organization
           // see https://docs.datadoghq.com/getting_started/site/
-          site: 'datadoghq.com',
-          service: 'vos.nz-test',
-          env: 'prod',
+          site: 'datad0g.com',
+          service: 'vos.nz',
+          env: '<ENV_NAME>',
           // Specify a version number to identify the deployed version of your application in Datadog
           // version: '1.0.0',
           sessionSampleRate: 100,
-          sessionReplaySampleRate: 100,
-          trackUserInteractions: true,
-          trackResources: true,
-          trackLongTasks: true,
+          sessionReplaySampleRate: 20,
           defaultPrivacyLevel: 'mask-user-input',
         });
       })
     </script>
-    <script>
-      (function(h,o,u,n,d) {
-        h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
-        d=o.createElement(u);d.async=1;d.src=n
-        n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
-      })(window,document,'script','https://www.datadoghq-browser-agent.com/us1/v5/datadog-logs.js','DD_LOGS')
-      window.DD_LOGS.onReady(function() {
-          window.DD_LOGS.init({
-            clientToken: 'pub95d276d97472b3cf0316df206ad3cae1',
-            site: 'datadoghq.com',
-            forwardErrorsToLogs: true,
-            sessionSampleRate: 100,
-          })
-        })
-      </script>
-
   </head>
   <body>
     <div id="root">
