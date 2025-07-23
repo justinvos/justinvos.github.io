@@ -31,7 +31,7 @@
           beforeSend: (event, context) => {
         // collect a RUM resource's response headers
               if (event.type === 'resource') {
-                  console.log('>>> beforeSend resource event', { 'responseHeaders' = Object.fromEntries(context.response.headers) });
+                  console.log('>>> beforeSend resource event', { responseHeaders: Object.fromEntries(context.response.headers) });
               }
               return true
           },
