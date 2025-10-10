@@ -45,6 +45,11 @@
       }
 
       document.getElementById('generate-random-number-button').addEventListener('click', () => {
+          window.DD_RUM && window.DD_RUM.addAction('checkout', {
+              'value': 24, // for example, 42.12
+              'items': [{id:'a', hasDiscount:true, status:'instock', price: 10}, {id:'b', hasDiscount:true, status:'instock', price: 12}, {id:'c', hasDiscount:false, status:'instock', price: 2}],
+          })
+        
         const headingElement = document.getElementById('heading');
         const newNumber = getRandomInt(100);
         console.log('test page 2:', { newNumber });
