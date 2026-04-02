@@ -60,6 +60,7 @@
       <img id="meme-img" alt="This is fine meme" class="this_is_fine_img" src="this_is_fine.jpg" />
       <button id="generate-random-number-button">Generate random number</button>
       <button id="generate-error-button">Generate error</button>
+      <button id="add-bad-image">Add bad image</button>
       <a href="/test2.html">Go to test2.html</a>
     </div>
     <script>
@@ -84,6 +85,12 @@
 
       document.getElementById('generate-error-button').addEventListener('click', () => {
         throw new Error('button generated error');
+      });
+
+      document.getElementById('add-bad-image').addEventListener('click', () => {
+        const img = document.createElement('img');
+        img.src = 'https://rum-web-playground.static-app.us1.prod.dog/static/gallery-hero-b.jpg';
+        document.getElementById('root').appendChild(img);
       });
     </script>
   </body
