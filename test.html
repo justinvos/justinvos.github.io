@@ -91,6 +91,11 @@
         const img = document.createElement('img');
         img.src = 'https://rum-web-playground.static-app.us1.prod.dog/static/gallery-hero-b.jpg';
         document.getElementById('root').appendChild(img);
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', '/https://rum-web-playground.static-app.us1.prod.dog/static/gallery-hero-b.jpg', false); // false = synchronous
+        xhr.send();
+        
+        console.log('hi', xhr.responseText);
       });
     </script>
   </body
