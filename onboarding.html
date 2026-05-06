@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="test.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script>
+      (function(h,o,u,n,d) {
+        h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
+        d=o.createElement(u);d.async=1;d.src=n
+        n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
+      })(window,document,'script','https://www.datadoghq-browser-agent.com/us1/v6/datadog-rum.js','DD_RUM')
+      window.DD_RUM.onReady(function() {
+        window.DD_RUM.init({
+              applicationId: '496a3efc-5c3b-45b6-a9f6-c4bc8bab8d5c',
+          clientToken: 'pub3e0fdccdefb7e327f6eb6da9d1c788d3',
+          // `site` refers to the Datadog site parameter of your organization
+          // see https://docs.datadoghq.com/getting_started/site/
+          site: 'datadoghq.com',
+          service: 'vos.nz',
+          env: 'production',
+          // Specify a version number to identify the deployed version of your application in Datadog
+          // version: '1.0.0',
+          sessionSampleRate: 100,
+          sessionReplaySampleRate: 20,
+          defaultPrivacyLevel: 'mask-user-input',
+        });
+      })
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <h1 id="heading">Test page 2</h1>
+      <img id="meme-img" alt="This is fine meme" class="this_is_fine_img" src="this_is_fine.jpg" />
+      <button id="generate-random-number-button">Generate random number</button>
+      <button id="generate-error-button">Generate error</button>
+      <a href="/test.html">Go to test.html</a>
+    </div>
+    <script>
+      document.getElementById('meme-img').addEventListener('click', () => alert('Hi RUM Summit!'));
+
+      function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+      }
+
+      document.getElementById('generate-random-number-button').addEventListener('click', () => {
+          window.DD_RUM && window.DD_RUM.addAction('checkout', {
+              'value': 24, // for example, 42.12
+              'items': [{id:'a', hasDiscount:true, status:'instock', price: 10}, {id:'b', hasDiscount:true, status:'instock', price: 12}, {id:'c', hasDiscount:false, status:'instock', price: 2}],
+          })
+        
+        const headingElement = document.getElementById('heading');
+        const newNumber = getRandomInt(100);
+        console.log('test page 2:', { newNumber });
+        window.DD_LOGS.onReady(function () {
+          window.DD_LOGS.logger.info(`test page 2: ${newNumber}`);
+        })
+        headingElement.innerHTML = `Test page: ${newNumber}`;
+
+        const img = document.getElementById('meme-img');
+        img.setAttribute('style', 'position: relative; top: 200px;');
+      });
+
+      document.getElementById('generate-error-button').addEventListener('click', () => {
+        throw new Error('button generated error');
+      });
+
+      navigator.serviceWorker.register('/service-worker.js').then((registration) => {
+        console.log('Service Worker registered:', registration);
+      },
+      (error) => {
+        console.error(`Service worker registration failed: ${error}`);
+      });
+    </script>
+  </body
+</html>
