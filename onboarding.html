@@ -35,6 +35,7 @@
       <img id="meme-img" alt="This is fine meme" class="this_is_fine_img" src="this_is_fine.jpg" />
       <button id="generate-random-number-button">Generate random number</button>
       <button id="generate-error-button">Generate error</button>
+      <button id="do-calculations-button">Do calculations</button>
       <a href="/test.html">Go to test.html</a>
       <img src="https://rum-web-playground.static-app.us1.prod.dog/static/gallery-hero-b.jpg" style="width:1000px" />
     </div>
@@ -65,6 +66,35 @@
 
       document.getElementById('generate-error-button').addEventListener('click', () => {
         throw new Error('button generated error');
+      });
+
+      function generateLongTask(durationMs = 5000) {
+        return new Promise((resolve) => {
+          const start = performance.now();
+      
+          let iterations = 0;
+      
+          function work() {
+            while (performance.now() - start < durationMs) {
+              // Simulate expensive CPU work
+              Math.sqrt(Math.random() * Number.MAX_SAFE_INTEGER);
+              iterations++;
+            }
+      
+            resolve({
+              message: "Long task completed",
+              durationMs,
+              iterations,
+            });
+          }
+      
+          work();
+        });
+      }
+
+
+      document.getElementById('do-calculations-button').addEventListener('click', () => {
+        generateLongTask(7000);
       });
 
       navigator.serviceWorker.register('/service-worker.js').then((registration) => {
