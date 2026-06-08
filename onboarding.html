@@ -110,7 +110,7 @@
       document.getElementById('do-async-calculations-button').addEventListener('click', () => {
         setTimeout(() => {
           document.getElementById('result').innerHTML = "Done";
-        }, 300);
+        }, 3000);
       });
 
       navigator.serviceWorker.register('/service-worker.js').then((registration) => {
