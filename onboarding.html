@@ -36,6 +36,8 @@
       <button id="generate-random-number-button">Generate random number</button>
       <button id="generate-error-button">Generate error</button>
       <button id="do-calculations-button">Do calculations</button>
+      <button id="do-async-calculations-button">Do calculations (async)</button>
+      <div id="result"></div>
       <a href="/test.html">Go to test.html</a>
       <img src="https://rum-web-playground.static-app.us1.prod.dog/static/gallery-hero-b.jpg" style="width:1000px" />
     </div>
@@ -95,6 +97,12 @@
 
       document.getElementById('do-calculations-button').addEventListener('click', () => {
         generateLongTask(7000);
+      });
+
+      document.getElementById('do-async-calculations-button').addEventListener('click', () => {
+        setTimeout(() => {
+          document.getElementById('result').innerHTML = "Done";
+        }, 300);
       });
 
       navigator.serviceWorker.register('/service-worker.js').then((registration) => {
